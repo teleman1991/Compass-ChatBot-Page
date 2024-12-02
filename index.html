@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass Datacenters ChatBot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg width="200" height="60" viewBox="0 0 400 120">
+                <circle cx="60" cy="60" r="40" fill="none" stroke="#FF6B00" stroke-width="3"/>
+                <path d="M60 20 L60 100 M20 60 L100 60" stroke="#FF6B00" stroke-width="3"/>
+                <circle cx="60" cy="60" r="5" fill="#FF6B00"/>
+                <text x="120" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#FF6B00">COMPASS</text>
+                <text x="120" y="85" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#000000">DATACENTERS</text>
+            </svg>
+        </div>
+    </header>
+    
+    <main>
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    Welcome to Compass Datacenters! How can I assist you today?
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type your message...">
+                <button onclick="sendMessage()" id="sendButton">
+                    Send
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Compass Datacenters. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
